@@ -29,7 +29,7 @@ def compute_phi(filename, event):
         if d['squirrel'] is False:
             nplus_0 += 1
     #Calculating correlation between the given event and squirrel event     
-    corr = round(((n11 * n00 - n10 * n01) / sqrt(n1_plus * n0_plus * nplus_1 * nplus_0)),4)
+    corr = (n11 * n00 - n10 * n01) / sqrt(n1_plus * n0_plus * nplus_1 * nplus_0)
     return corr   
 
 
